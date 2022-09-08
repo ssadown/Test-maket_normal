@@ -4,6 +4,54 @@ let slider = document.querySelector('.offer_slider');
 let dot1 = document.querySelector('#dot_first');
 let dot2 = document.querySelector('#dot_second');
 let dot3 = document.querySelector('#dot_three');
+let workPict = document.querySelector('.work_content_pict');
+let workHead = document.querySelector('.work_content_info_header_text');
+let workInfo = document.querySelector('.work_content_info_body_text');
+let step_text1 = document.querySelector('#step_1');
+let step_text2 = document.querySelector('#step_2');
+let step_text3 = document.querySelector('#step_3');
+let step_text4 = document.querySelector('#step_4');
+
+function step1() {
+    workPict.style.background = 'url(images/step_1.png)';
+    workPict.style.backgroundRepeat = 'no-repeat';
+    workHead.innerHTML = 'Проводим консультацию';
+    workInfo.innerHTML = 'Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.';
+    step_text1.style.color = '#E1670E';
+    step_text2.style.color = 'black';
+    step_text3.style.color = 'black';
+    step_text4.style.color = 'black';
+}
+function step2() {
+    workPict.style.background = 'url(images/step_2.png)';
+    workPict.style.backgroundRepeat = 'no-repeat';
+    workHead.innerHTML = 'Составляем смету';
+    workInfo.innerHTML = 'Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.';
+    step_text2.style.color = '#E1670E';
+    step_text1.style.color = 'black';
+    step_text3.style.color = 'black';
+    step_text4.style.color = 'black';
+}
+function step3() {
+    workPict.style.background = 'url(images/step_3.png)';
+    workPict.style.backgroundRepeat = 'no-repeat';
+    workHead.innerHTML = 'Привлекаем подрядчиков';
+    workInfo.innerHTML = 'Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.';
+    step_text3.style.color = '#E1670E';
+    step_text2.style.color = 'black';
+    step_text1.style.color = 'black';
+    step_text4.style.color = 'black';
+}
+function step4() {
+    workPict.style.background = 'url(images/step_4.png)';
+    workPict.style.backgroundRepeat = 'no-repeat';
+    workHead.innerHTML = 'Инспектируем все этапы работ';
+    workInfo.innerHTML = 'Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.';
+    step_text4.style.color = '#E1670E';
+    step_text2.style.color = 'black';
+    step_text3.style.color = 'black';
+    step_text1.style.color = 'black';
+}
 
 function opacity() {
     search.style.opacity = '1';

@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 input {
     outline:none;
@@ -341,9 +342,8 @@ ul {
     color: white;
 }
 .about {
-    height: 1000px;
+    height: 1150px;
     width: 100%;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -513,4 +513,197 @@ ul {
 }
 #consul_header {
     margin-top: 60px;
+}
+.work {
+    width: 100%;
+    height: 646px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.work_header {
+    width: 100%;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+}
+.work_header_h {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+#work_header_h_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    margin-left: 60px;
+}
+.work_header_step {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.work_header_step_button {
+    margin-left: 60px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work_header_step_button:hover {
+    color: #FF9900;
+    transition-duration: 0.3s;
+}
+.work_header_step_button:focus {
+    border: 2px solid #E1670E;
+    transition-duration: 0.3s;
+    color: black;
+}
+.work_header_step_button:active {
+    border: 0;
+    color: #E1670E;
+    transition-duration: 0.3s;
+}
+.work_header_step_button_border_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+#step_1 {
+    color: #E1670E;
+}
+#step_2 {
+    color: black;
+}
+#step_3 {
+    color: black;
+}
+#step_4 {
+    color: black;
+}
+.work_content {
+    width: 100%;
+    height: 460px;
+    display: flex;
+    margin-left: 90px;
+}
+.work_content_info {
+    height: 100%;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+}
+.work_content_info_header {
+    width: 100%;
+    height: 10%;
+}
+.work_content_info_header_text {
+    margin-left: 60px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    transition-duration: 0.3s;
+}
+.work_content_info_body {
+    width: 100%;
+    height: 60%;
+}
+.work_content_info_body_text {
+    margin-left: 60px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    transition-duration: 0.3s;
+}
+.work_content_info_footer {
+    width: 100%;
+    height: 15%; 
+    display: flex;
+    margin-top: 20px;
+}
+.work_content_info_footer_button {
+    margin-left: 60px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work_content_info_footer_button_more {
+    height: 60px;
+    width: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF9900;
+    border-radius: 16px;
+    transition-duration: 0.3s;
+}
+.work_content_info_footer_button_more:hover {
+    background-color: #ffb84d;    
+}
+.work_content_info_footer_button_more:focus {
+    background-color: #ffb84d;
+}
+.work_content_info_footer_button_more:active {
+    background-color: #E1670E;
+}
+.work_content_info_footer_button_more_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color:white;
+}
+.work_content_info_footer_button_contract {
+    border: 1px solid black;
+    border-radius: 16px;
+    width: 175px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.3s;
+}
+.work_content_info_footer_button_contract:hover {
+    background-color: #666666;
+    color: #FFFFFF;
+}
+.work_content_info_footer_button_contract:focus {
+    background-color: #666666;
+    color: #FFFFFF;
+}
+.work_content_info_footer_button_contract:active {
+    background-color: black;
+    color: #FFFFFF;
+}
+.work_content_pict {
+    height: 100%;
+    width: 50%;
+    border-radius: 6px;
+    background: url(images/step_1.png);
+    background-repeat: no-repeat;
+    transition-duration: 0.3s;
+    margin-left: 3%;
+}
+.question {
+    height: 100%;
+    width: 100%;
+    display: flex;
 }
