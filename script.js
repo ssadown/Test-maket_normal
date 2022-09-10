@@ -11,6 +11,29 @@ let step_text1 = document.querySelector('#step_1');
 let step_text2 = document.querySelector('#step_2');
 let step_text3 = document.querySelector('#step_3');
 let step_text4 = document.querySelector('#step_4');
+let accordion = document.querySelector('.question_block_quest_button_border');
+let accordionBlock = document.querySelector('#quest1');
+let accordionAnswer = document.querySelector('.question_block_answer_border');
+let x = 0;
+
+function accordionClick() {
+    /* вставка 2 функций при помощи использования if & else if */
+    if (x === 0) {
+    accordion.style.transform = 'rotate(60deg)';
+    accordion.style.transitionDuration = '1s';
+    accordionBlock.style.height = '400px';
+    accordionAnswer.style.height = '200px';
+    accordionAnswer.style.transitionDuration = '0.7s';
+    x = x + 1;
+    } else if (x === 1) {
+        accordion.style.transform = 'rotate(0deg)';
+        accordion.style.transitionDuration = '1s';
+        accordionBlock.style.height = '200px';
+        accordionAnswer.style.height = '0px';
+        accordionAnswer.style.transitionDuration = '0.7s';
+        x = x - 1;
+    }
+}
 
 function step1() {
     workPict.style.background = 'url(images/step_1.png)';
@@ -69,6 +92,7 @@ function slider_1() {
     dot2.style.backgroundColor = '#CACACA';
     dot3.style.color = '#CACACA';
     dot3.style.backgroundColor = '#CACACA';
+    slider.style.backgroundRepeat = 'no-repeat';
 }
 function slider_2() {
     slider.style.background = 'url(images/pict_slider2.png)';
@@ -78,7 +102,7 @@ function slider_2() {
     dot1.style.backgroundColor = '#CACACA';
     dot3.style.color = '#CACACA';
     dot3.style.backgroundColor = '#CACACA';
-    
+    slider.style.backgroundRepeat = 'no-repeat';
 }
 function slider_3() {
     slider.style.background = 'url(images/pict_slider3.png)';
@@ -88,5 +112,5 @@ function slider_3() {
     dot2.style.backgroundColor = '#CACACA';
     dot1.style.color = '#CACACA';
     dot1.style.backgroundColor = '#CACACA';
-    
+    slider.style.backgroundRepeat = 'no-repeat';
 }
