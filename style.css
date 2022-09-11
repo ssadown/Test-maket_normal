@@ -42,7 +42,12 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity:0
+    opacity: 0;
+}
+.header_left_burger_menu {
+    position: absolute;
+    height: 808px;
+    width: 420px;
 }
 .header_left_logo {
     width: 80%;
@@ -931,9 +936,22 @@ ul {
     background-color: #E1670E;
     transition-duration: 0.3s;
 }
-#radio {
+.radio input {
+    display: none;
+}
+.radio {
+    display: flex;
     margin-left: 63px;
 }
+.radio_button {
+    border: 1px solid #CACACA;
+    background-color: rgba(0, 0, 0, 0);
+    width: 15px;
+    height: 15px;
+    margin-top: 6px;
+    margin-right: 5px;
+}
+
 #radio_text {
     font-family: 'Montserrat';
     font-style: normal;

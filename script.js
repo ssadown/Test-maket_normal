@@ -15,6 +15,41 @@ let accordion = document.querySelector('.question_block_quest_button_border');
 let accordionBlock = document.querySelector('#quest1');
 let accordionAnswer = document.querySelector('.question_block_answer_border');
 let x = 0;
+let y = 0;
+let z = 0
+let radio = document.querySelector('.radio_button');
+let burger = document.querySelector('.header_left_burger');
+
+function burger_active() {
+    if (z === 0){
+    burger.innerHTML = '<div class="header_left_burger_border"><button class="header_left_burger_button" onclick="burger_active()"><svg class="header_right_btn_off_active_svg" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"/></svg></button> </div> <div class="header_left_burger_nav"><ul><li class="burger_nav_menu"><a href="#" id="list1">О нас</a></li><li class="burger_nav_menu"><a href="#" id="list2">Проекты</a></li><li class="burger_nav_menu"><a href="#" id="list3">Этапы</a></li><li class="burger_nav_menu"><a href="#" id="list4">Отзывы</a></li><li class="burger_nav_menu"><a href="#" id="list5">Контакты</a></li></ul>';
+    burger.style.height = '100vh';
+    burger.style.width = '420px';
+    burger.style.flexDirection = 'column';
+    burger.style.backgroundColor = '#FFFFFF';
+    burger.style.transitionDuration = '0.5s';
+    z = z +1;
+    } else if (z === 1) {
+        burger.style.position = '';
+        burger.style.height = '100%';
+        burger.style.width = '20%';
+        burger.style.backgroundColor = '';
+        burger.innerHTML = '<button class="header_left_burger_button" onclick="burger_active()"><svg width="72px" height="72px" viewBox="0 0 72 72" id="emoji" xmlns="http://www.w3.org/2000/svg"><line x1="16" x2="56" y1="26" y2="26" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line x1="16" x2="56" y1="36" y2="36" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line x1="16" x2="56" y1="46" y2="46" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg></button>';
+        z = z - 1;
+    }
+}
+
+function radio_click() {
+    if (y === 0){
+        y = y + 1;
+    radio.style.background ='url(images/radio.png)';
+    radio.style.backgroundRepeat = 'no-repeat';
+    radio.style.backgroundPosition = 'center';
+    } else if (y === 1) {
+        radio.style.background = '';
+        y = y - 1;
+    }
+}
 
 function accordionClick() {
     /* вставка 2 функций при помощи использования if & else if */

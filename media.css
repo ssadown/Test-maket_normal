@@ -1,0 +1,49 @@
+@media screen and (max-width:1024px) {
+    .header_center {
+        display: none;
+    }
+    .header_left {
+        width: 57%;
+    }
+    .header_left_logo {
+        justify-content: flex-end;
+    }
+    .header_right {
+        width: 43%;
+    }
+    .header_left_burger {
+        opacity: 1;
+        width: 20%;
+    }
+    .header_left_burger_button {
+        border: 0;
+        background-color: rgba(0, 0, 0, 0);
+        
+    }
+    .header_left_burger_border {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content:  flex-start;
+        margin-left: 60px;
+    }
+    .header_left_burger_nav {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .burger_nav_menu {
+        margin-top: 20px;
+    }
+    .header_right_input_border {
+        width: 80%;
+    }
+    /*перейти к слайдеру*/
+}
