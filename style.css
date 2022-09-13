@@ -88,7 +88,7 @@ ul {
     border-bottom: 1px solid gray;
 }
 .header_center {
-    width: 41%;
+    width: 43%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -701,7 +701,7 @@ ul {
 .work_content_pict {
     margin-top: -20px;
     height: 100%;
-    width: 50%;
+    width: 47%;
     border-radius: 6px;
     background: url(images/step_1.png);
     background-repeat: no-repeat;

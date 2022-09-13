@@ -1,0 +1,121 @@
+@media screen and (max-width:768px) {
+    .emptiness {
+        height: 60px;
+    }
+    .offer_slider {
+        height: 662px;
+        width: 668px;
+        background: url(images/slider_1_768.png);
+        justify-content: center;
+        align-items: center;
+    }
+    .offer_slider_content {
+        text-align: center;
+    }
+    .dots_slider {
+        justify-content: center;
+        margin-left: 90px;
+    }
+    .offer_slider_order {
+        width: 100%;
+        justify-content: center;
+    }
+    .offer_slider_header {
+        width: 80%;
+        text-align: center;
+    }
+    .about_content_order {
+        width: 668px;
+        height: 650px;
+        margin-top: 150px;
+    }
+    .about_content_menu_consul {
+        width: 668px;
+        height: 235px;
+        align-self: center;
+    }
+    .about_content_menu_quality {
+        width: 668px;
+        height: 235px;
+        align-self: center;
+    }
+    .work_header {
+        align-self: center;
+        margin-left: 0;
+    }
+    .work_header_step {
+        justify-content: space-around;
+        margin-left: 0;
+    }
+    .work_content {
+        align-self: center;
+        margin-left: 0;
+        flex-direction: column;
+        height: 1500px;
+    }
+    .work_content_info {
+        order:2;
+        width: 90%;
+    }
+    .work_content_pict {
+        order: 1;
+        align-self: center;
+        width: 668px;
+        height: 284px;
+        background-repeat: no-repeat;
+        background: url(images/step_1_768.png);
+    }
+    .work_content_info_footer {
+        margin-top: 0;
+    }
+    .footer {
+        height: 672px;
+        overflow: hidden;
+    }
+    .footer_block_input_header {
+        font-size: 40px;
+        align-self: center;
+    }
+    .footer_block {
+        flex-direction: column;
+    } 
+    .footer_block_menu {
+        order: 2;
+        height: 40%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #CACACA;
+    }
+    .footer_block_logo {
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_block_menu_sn {
+        height: 100px;
+        width: 60%;
+        justify-content: space-around;
+    }
+    .footer_block_input {
+        order: 1;
+        height: 472px;
+        width: 100%;
+        
+    }
+    .footer_block_input_fio {
+        padding-bottom: 30px;
+    }
+    .footer_block_input_mail {
+        padding-bottom: 30px;
+    }
+    .footer_block_input_alert {
+        padding-bottom: 30px;
+    }
+    .footer_block_menu_nav {
+        display: none;
+    }
+    .footer_block_input_button {
+        margin-bottom: 30px;
+    }
+}

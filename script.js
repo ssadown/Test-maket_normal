@@ -19,6 +19,8 @@ let y = 0;
 let z = 0
 let radio = document.querySelector('.radio_button');
 let burger = document.querySelector('.header_left_burger');
+let windowWidth = window.innerWidth;
+console.log(windowWidth);
 
 function burger_active() {
     if (z === 0){
@@ -53,14 +55,14 @@ function radio_click() {
 
 function accordionClick() {
     /* вставка 2 функций при помощи использования if & else if */
-    if (x === 0) {
+    if (x === 0 && windowWidth > 768) {
     accordion.style.transform = 'rotate(60deg)';
     accordion.style.transitionDuration = '1s';
     accordionBlock.style.height = '400px';
     accordionAnswer.style.height = '200px';
     accordionAnswer.style.transitionDuration = '0.7s';
     x = x + 1;
-    } else if (x === 1) {
+    } else if (x === 1 && windowWidth > 768) {
         accordion.style.transform = 'rotate(0deg)';
         accordion.style.transitionDuration = '1s';
         accordionBlock.style.height = '200px';
@@ -68,10 +70,27 @@ function accordionClick() {
         accordionAnswer.style.transitionDuration = '0.7s';
         x = x - 1;
     }
+    if (x === 0 && windowWidth <= 768) {
+        accordion.style.transform = 'rotate(60deg)';
+        accordion.style.transitionDuration = '1s';
+        accordionBlock.style.height = '600px';
+        accordionAnswer.style.height = '400px';
+        accordionAnswer.style.transitionDuration = '0.7s';
+        x = x + 1;
+        } else if (x === 1 && windowWidth <= 768 ) {
+            accordion.style.transform = 'rotate(0deg)';
+            accordion.style.transitionDuration = '1s';
+            accordionBlock.style.height = '200px';
+            accordionAnswer.style.height = '0px';
+            accordionAnswer.style.transitionDuration = '0.7s';
+            x = x - 1;
+        }
 }
 
 function step1() {
+    if (windowWidth > 1024) {
     workPict.style.background = 'url(images/step_1.png)';
+    workPict.style.backgroundSize = '100% 100%';
     workPict.style.backgroundRepeat = 'no-repeat';
     workHead.innerHTML = 'Проводим консультацию';
     workInfo.innerHTML = 'Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.';
@@ -79,9 +98,33 @@ function step1() {
     step_text2.style.color = 'black';
     step_text3.style.color = 'black';
     step_text4.style.color = 'black';
+    } else if (windowWidth <= 1024 && windowWidth > 768) {
+            workPict.style.background = 'url(images/step_1_1024.png)';
+            workPict.style.backgroundSize = '100% 100%';
+            workPict.style.backgroundRepeat = 'no-repeat';
+            workHead.innerHTML = 'Проводим консультацию';
+            workInfo.innerHTML = 'Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.';
+            step_text1.style.color = '#E1670E';
+            step_text2.style.color = 'black';
+            step_text3.style.color = 'black';
+            step_text4.style.color = 'black';
+    } else if (windowWidth <= 768) {
+        workPict.style.background = 'url(images/step_1_768.png)';
+        workPict.style.backgroundSize = '100% 100%';
+        workPict.style.backgroundRepeat = 'no-repeat';
+        workHead.innerHTML = 'Проводим консультацию';
+        workInfo.innerHTML = 'Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.';
+        step_text1.style.color = '#E1670E';
+        step_text2.style.color = 'black';
+        step_text3.style.color = 'black';
+        step_text4.style.color = 'black';
+    }
+        
 }
-function step2() {
+function step2() { 
+    if (windowWidth > 1024) {
     workPict.style.background = 'url(images/step_2.png)';
+    workPict.style.backgroundSize = '100% 100%';
     workPict.style.backgroundRepeat = 'no-repeat';
     workHead.innerHTML = 'Составляем смету';
     workInfo.innerHTML = 'Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.';
@@ -89,9 +132,32 @@ function step2() {
     step_text1.style.color = 'black';
     step_text3.style.color = 'black';
     step_text4.style.color = 'black';
+    } else if (768 < windowWidth <=1024 && windowWidth > 768) {
+        workPict.style.background = 'url(images/step_2_1024.png)';
+        workPict.style.backgroundSize = '100% 100%';
+        workPict.style.backgroundRepeat = 'no-repeat';
+        workHead.innerHTML = 'Составляем смету';
+        workInfo.innerHTML = 'Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.';
+        step_text2.style.color = '#E1670E';
+        step_text1.style.color = 'black';
+        step_text3.style.color = 'black';
+        step_text4.style.color = 'black';
+    } else if (windowWidth <= 768) {
+        workPict.style.background = 'url(images/step_2_768.png)';
+        workPict.style.backgroundSize = '100% 100%';
+        workPict.style.backgroundRepeat = 'no-repeat';
+        workHead.innerHTML = 'Составляем смету';
+        workInfo.innerHTML = 'Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.';
+        step_text2.style.color = '#E1670E';
+        step_text1.style.color = 'black';
+        step_text3.style.color = 'black';
+        step_text4.style.color = 'black';
+    }
 }
 function step3() {
+    if (windowWidth > 1024) {
     workPict.style.background = 'url(images/step_3.png)';
+    workPict.style.backgroundSize = '100% 100%';
     workPict.style.backgroundRepeat = 'no-repeat';
     workHead.innerHTML = 'Привлекаем подрядчиков';
     workInfo.innerHTML = 'Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.';
@@ -99,9 +165,32 @@ function step3() {
     step_text2.style.color = 'black';
     step_text1.style.color = 'black';
     step_text4.style.color = 'black';
+    } else if (768 < windowWidth <=1024 && windowWidth > 768) {
+        workPict.style.background = 'url(images/step_3_1024.png)';
+        workPict.style.backgroundSize = '100% 100%';
+        workPict.style.backgroundRepeat = 'no-repeat';
+        workHead.innerHTML = 'Привлекаем подрядчиков';
+        workInfo.innerHTML = 'Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.';
+        step_text3.style.color = '#E1670E';
+        step_text2.style.color = 'black';
+        step_text1.style.color = 'black';
+        step_text4.style.color = 'black';
+    } else if (windowWidth <= 768) {
+        workPict.style.background = 'url(images/step_3_768.png)';
+        workPict.style.backgroundSize = '100% 100%';
+        workPict.style.backgroundRepeat = 'no-repeat';
+        workHead.innerHTML = 'Привлекаем подрядчиков';
+        workInfo.innerHTML = 'Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.';
+        step_text3.style.color = '#E1670E';
+        step_text2.style.color = 'black';
+        step_text1.style.color = 'black';
+        step_text4.style.color = 'black';
+    }
 }
 function step4() {
+    if (windowWidth > 1024) {
     workPict.style.background = 'url(images/step_4.png)';
+    workPict.style.backgroundSize = '100% 100%';
     workPict.style.backgroundRepeat = 'no-repeat';
     workHead.innerHTML = 'Инспектируем все этапы работ';
     workInfo.innerHTML = 'Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.';
@@ -109,6 +198,27 @@ function step4() {
     step_text2.style.color = 'black';
     step_text3.style.color = 'black';
     step_text1.style.color = 'black';
+    } else if (768 < windowWidth <= 1024 && windowWidth > 768) {
+        workPict.style.background = 'url(images/step_4_1024.png)';
+        workPict.style.backgroundSize = '100% 100%';
+        workPict.style.backgroundRepeat = 'no-repeat';
+        workHead.innerHTML = 'Инспектируем все этапы работ';
+        workInfo.innerHTML = 'Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.';
+        step_text4.style.color = '#E1670E';
+        step_text2.style.color = 'black';
+        step_text3.style.color = 'black';
+        step_text1.style.color = 'black';
+    } else if (windowWidth <= 1024) {
+        workPict.style.background = 'url(images/step_4_768.png)';
+        workPict.style.backgroundSize = '100% 100%';
+        workPict.style.backgroundRepeat = 'no-repeat';
+        workHead.innerHTML = 'Инспектируем все этапы работ';
+        workInfo.innerHTML = 'Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.';
+        step_text4.style.color = '#E1670E';
+        step_text2.style.color = 'black';
+        step_text3.style.color = 'black';
+        step_text1.style.color = 'black';
+    }
 }
 
 function opacity() {
@@ -120,6 +230,7 @@ function close_opacity() {
     close.style.opacity = '0';
 };
 function slider_1() {
+    if(windowWidth > 1024) {
     slider.style.background = 'url(images/pict_slider1.png)';
     dot1.style.color = 'white';
     dot1.style.backgroundColor = 'white';
@@ -128,8 +239,28 @@ function slider_1() {
     dot3.style.color = '#CACACA';
     dot3.style.backgroundColor = '#CACACA';
     slider.style.backgroundRepeat = 'no-repeat';
+    } else if (windowWidth <=1024) {
+        slider.style.background = 'url(images/slider_1_1024.png)';
+        dot1.style.color = 'white';
+        dot1.style.backgroundColor = 'white';
+        dot2.style.color = '#CACACA';
+        dot2.style.backgroundColor = '#CACACA';
+        dot3.style.color = '#CACACA';
+        dot3.style.backgroundColor = '#CACACA';
+        slider.style.backgroundRepeat = 'no-repeat';
+    } else if (windowWidth <= 768) {
+        slider.style.background = 'url(images/slider_1_768.png)';
+        dot1.style.color = 'white';
+        dot1.style.backgroundColor = 'white';
+        dot2.style.color = '#CACACA';
+        dot2.style.backgroundColor = '#CACACA';
+        dot3.style.color = '#CACACA';
+        dot3.style.backgroundColor = '#CACACA';
+        slider.style.backgroundRepeat = 'no-repeat';
+    }
 }
 function slider_2() {
+    if (windowWidth > 1024) {
     slider.style.background = 'url(images/pict_slider2.png)';
     dot2.style.color = 'white';
     dot2.style.backgroundColor = 'white';
@@ -138,8 +269,28 @@ function slider_2() {
     dot3.style.color = '#CACACA';
     dot3.style.backgroundColor = '#CACACA';
     slider.style.backgroundRepeat = 'no-repeat';
+    } else if (windowWidth <= 1024) {
+        slider.style.background = 'url(images/slider_2_1024.png)';
+        dot2.style.color = 'white';
+        dot2.style.backgroundColor = 'white';
+        dot1.style.color = '#CACACA';
+        dot1.style.backgroundColor = '#CACACA';
+        dot3.style.color = '#CACACA';
+        dot3.style.backgroundColor = '#CACACA';
+        slider.style.backgroundRepeat = 'no-repeat';
+    } else if (windowWidth <= 768) {
+        slider.style.background = 'url(images/slider_2_768.png)';
+        dot2.style.color = 'white';
+        dot2.style.backgroundColor = 'white';
+        dot1.style.color = '#CACACA';
+        dot1.style.backgroundColor = '#CACACA';
+        dot3.style.color = '#CACACA';
+        dot3.style.backgroundColor = '#CACACA';
+        slider.style.backgroundRepeat = 'no-repeat';
+    }
 }
 function slider_3() {
+    if (windowWidth > 1024) {
     slider.style.background = 'url(images/pict_slider3.png)';
     dot3.style.color = 'white';
     dot3.style.backgroundColor = 'white';
@@ -148,4 +299,30 @@ function slider_3() {
     dot1.style.color = '#CACACA';
     dot1.style.backgroundColor = '#CACACA';
     slider.style.backgroundRepeat = 'no-repeat';
+    } else if (windowWidth <=1024) {
+        slider.style.background = 'url(images/slider_3_1024.png)';
+        dot3.style.color = 'white';
+        dot3.style.backgroundColor = 'white';
+        dot2.style.color = '#CACACA';
+        dot2.style.backgroundColor = '#CACACA';
+        dot1.style.color = '#CACACA';
+        dot1.style.backgroundColor = '#CACACA';
+        slider.style.backgroundRepeat = 'no-repeat';
+    } else if (windowWidth <= 768) {
+        slider.style.background = 'url(images/slider_3_768.png)';
+        dot3.style.color = 'white';
+        dot3.style.backgroundColor = 'white';
+        dot2.style.color = '#CACACA';
+        dot2.style.backgroundColor = '#CACACA';
+        dot1.style.color = '#CACACA';
+        dot1.style.backgroundColor = '#CACACA';
+        slider.style.backgroundRepeat = 'no-repeat';
+    }
 }
+function sliderSlider() {
+setTimeout(slider_1,);
+setTimeout(slider_2, 5000);
+setTimeout(slider_3, 10000);
+};
+sliderSlider();
+setInterval(sliderSlider, 15000);

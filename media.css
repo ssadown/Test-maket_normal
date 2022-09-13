@@ -46,4 +46,64 @@
         width: 80%;
     }
     /*перейти к слайдеру*/
+    .offer_slider {
+        width: 924px;
+        background: url(images/slider_1_1024.png);
+    }
+    .offer_slider_header {
+        font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 73px;
+    width: 70%;
+    }
+    .offer_slider_content {
+        font-size: 18px;
+        width: 70%;
+    }
+    .about {
+        height: 1800px;
+    }
+    .about_header_text {
+        width: 100%;
+    }
+    .about_content {
+        flex-direction: column;
+        height: 1400px;
+    }
+    .about_content_order {
+        margin-top: 20px;
+    }
+    .about_content_menu {
+        margin-top: 20px;
+    }
+    .work {
+        height: 852px;
+    }
+    .work_content_pict {
+        width: 437px;
+        height: 640px;
+        background-size: 100% 100%;
+        background: url(images/step_1_1024.png);
+    }
+    .work_content_info_footer {
+        margin-top: 230px;
+    }
+    #radio_text {
+        font-size: 14px;
+    }
+    .footer_block_info {
+        font-size: 10px;
+        width: 20%;
+        text-align: center;
+        display: none;
+    }
+    .footer_block_input {
+        width: 70%;
+    }
+    .footer_block_menu {
+        width: 30%;
+        align-items: flex-start;
+    }
 }
