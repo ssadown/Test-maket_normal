@@ -1,0 +1,270 @@
+@media screen and (max-width:320px) {
+    .header_left {
+        width: 70%;
+        justify-content: space-around;
+    }
+    .header_right {
+        width: 200px;
+        flex-direction: column;
+        height: 200px;
+        position: absolute;
+        margin-left: 40%;
+        align-items: flex-end;
+    }
+    .header_right_input_border {
+        width: 200px;
+        font-size: 10px;
+        margin-right: 20px;
+    }
+    .header_right_input {
+        order:3;
+
+    }
+    .header_right_btn_search {
+        order:2;
+        z-index: 3;
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+    .header_right_btn_off {
+        order:1;
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+    .offer {
+        height: 570px;
+    }
+    .offer_slider {
+        width: 290px;
+        height: 308px;
+        background: url(images/slider_1_320.png);
+    }
+    .emptiness {
+        height: 0px;
+    }
+    .offer_slider_header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        height: 30%;
+    }
+    .offer_slider_header_text {
+        width: 100%;
+        margin-left: 0;
+        font-size: 21px;
+        line-height: 20px;
+        align-content: flex-end;
+        margin-top: 0;
+    }
+    .offer_slider_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        height: 30%;
+    }
+    .offer_slider_content_text {
+        width: 100%;
+        margin-left: 0;
+        font-size: 12px;
+        line-height: 20px;
+        align-content: flex-end;
+        margin-top: 0;
+    }
+    .offer_slider_order {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        height: 30%;
+    }
+    .offer_slider_order_button {
+        margin-left: 0;
+    }
+    .dots_slider {
+        margin-left: 0;
+        justify-content: space-around;
+        height: 10%;
+        width: 100%;
+
+    }
+    .dot_button_border {
+        height: 15px;
+        width: 15px;
+        margin-left: 50px;
+    }
+    .about {
+        height: 2800px;
+        justify-content: flex-start;
+    }
+    .about_header_text { 
+        height: 1500px;
+    }
+    .about_content {
+        height: 1500px;
+        margin-top: 800px;
+    }
+    .about_content_order { 
+        height: 400px;
+        width: 290px;
+        background: url(images/content_order_320.png);
+        background-repeat: no-repeat;
+    }
+    .about_content_order_inf {
+        margin-bottom: -200px;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0);
+        color: black;
+    }
+    .about_content_order_inf_button_border_text {
+        color: black;
+    }
+    .about_content_order_inf_text {
+        color: black;
+        width: 90%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .about_content_menu {
+        height: 1600px;
+        margin-top: 230px;
+    }
+    .about_content_menu_consul {
+        border: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+    }
+    .about_content_menu_consul_text {
+        width: 320px;
+        height: 200px;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+    .about_content_menu_consul_svg {
+        height: 100px;
+        width: 100px;
+        align-self: flex-start;
+    }
+    .about_content_menu_consul_text_header {
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 16px;  
+        margin-top: 0;  
+    }
+    .about_content_menu_consul_text_content_text {
+        font-size: 12px;
+        line-height: 20px;
+        width: 95%;
+    }
+    .about_content_menu_quality {
+        border: 0;
+        flex-direction: column;
+        width: 320px;
+        height: 200px;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    .about_content_menu_quality_svg {
+        height: 100px;
+        width: 100px;
+        margin-top: 0;
+        margin-left: 20px;
+
+    }
+    .about_content_menu_quality_text {
+        width: 320px;
+        height: 200px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .about_content_menu_consul_text_header {
+        margin-top: 0;
+        align-items: flex-end;
+        width: 100%;
+    }
+    .about_content_menu_consul_text_content {
+        margin-top: 0;
+        width: 100%;
+        padding-left: 18px;
+    }
+    #consul_content_768 {
+        padding-left: 0;
+    }
+    .work_header_h {
+        align-items: flex-start;
+        margin-left: 0px;
+    }
+    #work_header_h_text {
+        font-size: 32px;
+        width: 100%;
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+    .work_header_step {
+        width: 320px;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .work_header_step_button {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .work_content_pict {
+        width: 290px;
+        height: 160px;
+        background: url(images/step_1_320.png);
+    }
+    .work_content_info_footer_button {
+        margin-left: 0;
+        margin-top: 200px;
+        height: 39px;
+        width: 162px;
+    }
+    .work_content_info_body_text {
+        margin-top: 0;
+    }
+    .question {
+        margin-top: 300px;
+        height: 1900px;
+    }
+    .footer_block_input_button {
+        padding-top: 5px;
+        flex-direction: column;
+    }
+    .radio {
+        margin-left: 0;
+    }
+    .footer_block_input_header_text {
+        width: 90%;
+        font-size: 32px;
+    }
+    .footer_block_input_fio_enter {
+        width: 300px;
+    }
+    .footer_block_input_mail_enter {
+        width: 300px;
+    }
+    .footer_block_input_alert_enter {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#CACACA;
+        margin-right: 0;
+        padding-right: 0;
+        margin-left: 133px;
+    }
+}
